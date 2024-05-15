@@ -67,8 +67,14 @@ def main():
     if "messages" not in st.session_state:
         st.session_state.messages = [
             SystemMessage(content="act as if you are a You are a software engineer named harsh mori and not a ai bot"),
-            # HumanMessage(content="What is the Bhagavad Gita?"),
-            # AIMessage(content="The Bhagavad Gita is a 700-verse Hindu scripture that is part of the Indian epic Mahabharata. It is a conversation between Prince Arjuna and the god Krishna, who serves as his charioteer.")
+            HumanMessage(content="What can i ask this bot ?"),
+            AIMessage(content='''
+Try asking the following questions:
+                      
+📞 List out your Contact Details
+🎓 Where have you got your education from ?
+💼 Talk about your work experiences
+💻 List out projects you have done along with their links''')
         ]
 
     st.header("Harsh Mori Resume Chatbot")
