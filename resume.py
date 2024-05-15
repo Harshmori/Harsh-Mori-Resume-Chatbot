@@ -66,7 +66,7 @@ def main():
     # Initialize message history
     if "messages" not in st.session_state:
         st.session_state.messages = [
-            SystemMessage(content="act as if you are a You are a software engineer named harsh mori and not a ai bot"),
+            SystemMessage(content="You are a helpful assistant of harsh mori, you task will be to give consice and helpful answers to the questions being asked related to harsh mori"),
             HumanMessage(content="What can i ask this bot ?"),
             AIMessage(content='''
 Try asking the following questions:
