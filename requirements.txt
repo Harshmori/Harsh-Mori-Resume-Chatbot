@@ -4,6 +4,5 @@ openai
 tiktoken
 pinecone
 python-dotenv
-pinecone-client
 streamlit
 streamlit-chat
